@@ -75,7 +75,6 @@ Zustand in-memory caching
 Optional localStorage caching
 
 📁 Project Structure
-<img width="693" height="1209" alt="image" src="https://github.com/user-attachments/assets/1a1a63d5-6b56-4a54-9827-62e94685256c" />
 
 src/
  ├─ app/
