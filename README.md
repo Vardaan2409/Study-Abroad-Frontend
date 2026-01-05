@@ -247,7 +247,7 @@ while maintaining scalability, which makes it ideal for this project.
 
 # Screenshots
 
-<img width="2867" height="1539" alt="Screenshot 2026-01-05 230940" src="https://github.com/user-attachments/assets/1bafa47c-a9c4-42a8-9c0b-be482c21b439" />
+<img width="2879" height="1545" alt="Screenshot 2026-01-05 230811" src="https://github.com/user-attachments/assets/2a114910-959f-497b-9d84-a7d95f362627" />
 <img width="2879" height="1543" alt="Screenshot 2026-01-05 230822" src="https://github.com/user-attachments/assets/f0e0c0f2-efb7-4df3-be96-be04fb3347a4" />
 <img width="2879" height="1546" alt="Screenshot 2026-01-05 230835" src="https://github.com/user-attachments/assets/d2148d17-0798-465b-8ef5-88aa92ddf199" />
 <img width="2849" height="1543" alt="Screenshot 2026-01-05 230850" src="https://github.com/user-attachments/assets/4ba1d3eb-669d-4625-a172-a2408575e562" />
@@ -257,7 +257,7 @@ while maintaining scalability, which makes it ideal for this project.
 <img width="2867" height="1539" alt="Screenshot 2026-01-05 230940" src="https://github.com/user-attachments/assets/bbec482c-10ee-4ccd-93bc-7944a2a65785" />
 
 
-<img width="752" height="1334" alt="Screenshot 2026-01-05 231227" src="https://github.com/user-attachments/assets/e8292fb8-1d0f-464b-af9a-584bc394f36c" />
+#### <img width="752" height="1334" alt="Screenshot 2026-01-05 231227" src="https://github.com/user-attachments/assets/e8292fb8-1d0f-464b-af9a-584bc394f36c" />
 <img width="751" height="1334" alt="Screenshot 2026-01-05 231237" src="https://github.com/user-attachments/assets/6be348b6-dbe8-44cd-baf7-d2164eb628f3" />
 <img width="744" height="1333" alt="Screenshot 2026-01-05 231254" src="https://github.com/user-attachments/assets/be017abf-9f74-4d56-bbdb-1043424cca56" />
 <img width="744" height="1327" alt="Screenshot 2026-01-05 231304" src="https://github.com/user-attachments/assets/f606cfbe-ae5d-4c10-9e73-62103dbcbd6c" />
