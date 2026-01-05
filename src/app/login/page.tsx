@@ -110,9 +110,51 @@
 // }
 
 
+// "use client";
+
+// import { Box, Button, TextField, Typography } from "@mui/material";
+// import { useRouter } from "next/navigation";
+// import { useAuthStore } from "@/store/authStore";
+
+// export default function LoginPage() {
+//     const router = useRouter();
+//     const setToken = useAuthStore((state) => state.setToken);
+
+//     const handleLogin = () => {
+//         // 🔴 Bypassed auth (intentional)
+//         setToken("mock-token");
+//         router.push("/dashboard");
+//     };
+
+//     return (
+//         <Box
+//             sx={{
+//                 maxWidth: 400,
+//                 mx: "auto",
+//                 mt: 12,
+//                 p: 4,
+//                 boxShadow: 3,
+//                 borderRadius: 2,
+//             }}
+//         >
+//             <Typography variant="h5" sx={{ mb: 2 }}>
+//                 Admin Login
+//             </Typography>
+
+//             <TextField label="Username" fullWidth sx={{ mb: 2 }} />
+//             <TextField label="Password" type="password" fullWidth sx={{ mb: 3 }} />
+
+//             <Button fullWidth variant="contained" onClick={handleLogin}>
+//                 Login
+//             </Button>
+//         </Box>
+//     );
+// }
+
+
 "use client";
 
-import { Box, Button, TextField, Typography } from "@mui/material";
+import { Box, Button, TextField, Typography, Stack } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { useAuthStore } from "@/store/authStore";
 
@@ -121,7 +163,7 @@ export default function LoginPage() {
     const setToken = useAuthStore((state) => state.setToken);
 
     const handleLogin = () => {
-        // 🔴 Bypassed auth (intentional)
+        // 🔴 Auth intentionally bypassed
         setToken("mock-token");
         router.push("/dashboard");
     };
@@ -129,24 +171,58 @@ export default function LoginPage() {
     return (
         <Box
             sx={{
-                maxWidth: 400,
-                mx: "auto",
-                mt: 12,
-                p: 4,
-                boxShadow: 3,
-                borderRadius: 2,
+                minHeight: "calc(100vh - 128px)", // header + footer space
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                px: 2,
             }}
         >
-            <Typography variant="h5" sx={{ mb: 2 }}>
-                Admin Login
-            </Typography>
+            <Box
+                sx={{
+                    width: "100%",
+                    maxWidth: 420,
+                    p: { xs: 3, sm: 4 },
+                    borderRadius: 3,
+                    boxShadow: 4,
+                    backgroundColor: "#fff",
+                }}
+            >
+                <Stack spacing={3}>
+                    <Typography variant="h5" fontWeight={600} textAlign="center">
+                        Admin Login
+                    </Typography>
 
-            <TextField label="Username" fullWidth sx={{ mb: 2 }} />
-            <TextField label="Password" type="password" fullWidth sx={{ mb: 3 }} />
+                    <Typography
+                        variant="body2"
+                        color="text.secondary"
+                        textAlign="center"
+                    >
+                        Enter your credentials to access the dashboard
+                    </Typography>
 
-            <Button fullWidth variant="contained" onClick={handleLogin}>
-                Login
-            </Button>
+                    <TextField
+                        label="Username"
+                        fullWidth
+                        autoComplete="off"
+                    />
+
+                    <TextField
+                        label="Password"
+                        type="password"
+                        fullWidth
+                        autoComplete="off"
+                    />
+
+                    <Button
+                        variant="contained"
+                        size="large"
+                        onClick={handleLogin}
+                    >
+                        Login
+                    </Button>
+                </Stack>
+            </Box>
         </Box>
     );
 }

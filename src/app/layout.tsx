@@ -33,6 +33,53 @@
 // }
 
 
+// import "./globals.css";
+// import Providers from "./providers";
+// import Header from "@/components/Header";
+// import Footer from "@/components/Footer";
+
+// export default function RootLayout({
+//   children,
+// }: {
+//   children: React.ReactNode;
+// }) {
+//   return (
+//     <html lang="en">
+//       <body suppressHydrationWarning>
+//         <Providers>
+//           {/* ✅ DO NOT put Tailwind layout ABOVE ThemeRegistry */}
+//           <div
+//             style={{
+//               minHeight: "100vh",
+//               display: "flex",
+//               flexDirection: "column",
+//               backgroundColor: "#f5f7fb",
+//             }}
+//           >
+//             <Header />
+
+//             <main
+//               style={{
+//                 flex: 1,
+//                 display: "flex",
+//                 alignItems: "center",
+//                 justifyContent: "center",
+//                 paddingTop: 64,   // header height
+//                 paddingBottom: 20 // footer height
+//               }}
+//             >
+//               {children}
+//             </main>
+
+//             <Footer />
+//           </div>
+//         </Providers>
+//       </body>
+//     </html>
+//   );
+// }
+
+
 import "./globals.css";
 import Providers from "./providers";
 import Header from "@/components/Header";
@@ -47,7 +94,6 @@ export default function RootLayout({
     <html lang="en">
       <body suppressHydrationWarning>
         <Providers>
-          {/* ✅ DO NOT put Tailwind layout ABOVE ThemeRegistry */}
           <div
             style={{
               minHeight: "100vh",
@@ -56,21 +102,26 @@ export default function RootLayout({
               backgroundColor: "#f5f7fb",
             }}
           >
+            {/* Global Header */}
             <Header />
 
+            {/* Main Content */}
             <main
               style={{
                 flex: 1,
                 display: "flex",
-                alignItems: "center",
                 justifyContent: "center",
-                paddingTop: 64,   // header height
-                paddingBottom: 48 // footer height
+                alignItems: "center",
+                paddingTop: 64, // header height
+                paddingBottom: 48, // footer height
+                paddingLeft: 16,
+                paddingRight: 16,
               }}
             >
               {children}
             </main>
 
+            {/* Global Footer */}
             <Footer />
           </div>
         </Providers>
