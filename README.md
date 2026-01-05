@@ -78,15 +78,25 @@ Optional localStorage caching
 
 src/
  ├─ app/
+ 
  │   ├─ page.tsx
+ 
  │   ├─ login/
+ 
  │   ├─ dashboard/
+ 
  │   │   ├─ users/
+ 
  │   │   ├─ products/
+ 
  │   └─ layout.tsx
+ 
  │
+ 
  ├─ components/
+ 
  │   ├─ Header.tsx
+ 
  │   ├─ Footer.tsx
  │   ├─ UsersTable.tsx
  │   ├─ ProductCard.tsx
