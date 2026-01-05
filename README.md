@@ -1,9 +1,9 @@
-📊 Study Abroad Admin Dashboard
+# 📊 Study Abroad Admin Dashboard
 
 A modern, responsive Admin Dashboard built with Next.js (App Router), Material-UI (MUI), and Zustand.
 The dashboard allows admins to manage users and products using the DummyJSON API.
 
-🚀 Tech Stack
+## 🚀 Tech Stack
 
 Next.js 14+ (App Router)
 
@@ -17,8 +17,8 @@ Tailwind CSS (layout utilities only)
 
 DummyJSON API
 
-✨ Features
-🔐 Authentication (Bypassed for Stability)
+## ✨ Features
+### 🔐 Authentication (Bypassed for Stability)
 
 Login UI implemented
 
@@ -28,7 +28,7 @@ Route protection logic implemented
 
 DummyJSON auth is unstable, so a mock token fallback is used (explained below)
 
-👤 Users Management
+### 👤 Users Management
 
 List users with pagination
 
@@ -38,7 +38,7 @@ View single user details
 
 Responsive UI
 
-📦 Products Management
+### 📦 Products Management
 
 List products with pagination
 
@@ -52,7 +52,7 @@ INR price conversion
 
 Fully responsive layout
 
-🎨 UI & UX
+### 🎨 UI & UX
 
 Fully responsive (desktop, tablet, mobile)
 
@@ -64,7 +64,7 @@ Single global header & footer
 
 No unnecessary scrolling
 
-⚡ Performance Optimizations
+### ⚡ Performance Optimizations
 
 API-side pagination
 
@@ -74,7 +74,7 @@ Zustand in-memory caching
 
 Optional localStorage caching
 
-📁 Project Structure
+## 📁 Project Structure
 
 src/
  ├─ app/
@@ -102,7 +102,7 @@ src/
  └─ styles/
      └─ globals.css
 
-⚙️ Setup Instructions
+## ⚙️ Setup Instructions
 
 1️⃣ Clone the Repository
 
@@ -117,11 +117,11 @@ npm install
 npm run dev
 
 
-Open:
+## Open:
 
 http://localhost:3000
 
-🔐 Authentication Note (Important)
+### 🔐 Authentication Note (Important)
 
 DummyJSON’s authentication endpoint is inconsistent and may return errors like:
 
@@ -130,7 +130,7 @@ DummyJSON’s authentication endpoint is inconsistent and may return errors like
 
 even for valid credentials.
 
-✅ Solution Used
+## ✅ Solution Used
 
 Login UI and flow are implemented
 
@@ -149,7 +149,7 @@ Assignment flow works end-to-end
 
 API integration, state management, and routing are still demonstrated
 
-🌱 Environment Variables
+## 🌱 Environment Variables
 
 ❌ No environment variables required
 
@@ -159,7 +159,7 @@ Zustand store
 
 localStorage (optional caching)
 
-🧠 Why Zustand?
+## 🧠 Why Zustand?
 
 Zustand was chosen because:
 
@@ -173,7 +173,7 @@ Better suited than Redux for small–medium applications
 
 Excellent performance with simple mental model
 
-🗃️ Caching Strategy
+## 🗃️ Caching Strategy
 
 In-Memory (Zustand)
 
@@ -187,7 +187,7 @@ Persists data across reloads
 
 Improves perceived performance
 
-📱 Responsiveness
+## 📱 Responsiveness
 
 ✔ Desktop
 
@@ -201,7 +201,7 @@ Adaptive layouts for lists and detail pages
 
 
 
-Note on Authentication:
+### Note on Authentication:
 
 DummyJSON’s authentication endpoint is inconsistent and may return
 “Access Token is required” even for valid login requests.
