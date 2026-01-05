@@ -75,6 +75,7 @@ Zustand in-memory caching
 Optional localStorage caching
 
 📁 Project Structure
+
 src/
  ├─ app/
  │   ├─ page.tsx
@@ -102,8 +103,11 @@ src/
      └─ globals.css
 
 ⚙️ Setup Instructions
+
 1️⃣ Clone the Repository
-git clone https://github.com/<your-username>/study-abroad-admin-dashboard.git
+
+git clone [https://github.com/<your-username>/study-abroad-admin-dashboard.git](https://github.com/Vardaan2409/Study-Abroad-Frontend)
+
 cd study-abroad-admin-dashboard
 
 2️⃣ Install Dependencies
