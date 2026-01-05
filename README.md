@@ -110,10 +110,10 @@ git clone [https://github.com/<your-username>/study-abroad-admin-dashboard.git](
 
 cd study-abroad-admin-dashboard
 
-2️⃣ Install Dependencies
+2️⃣ Install Dependencies -- 
 npm install
 
-3️⃣ Run the Development Server
+3️⃣ Run the Development Server -- 
 npm run dev
 
 
@@ -174,6 +174,7 @@ Better suited than Redux for small–medium applications
 Excellent performance with simple mental model
 
 🗃️ Caching Strategy
+
 In-Memory (Zustand)
 
 Prevents repeated API calls
@@ -189,7 +190,9 @@ Improves perceived performance
 📱 Responsiveness
 
 ✔ Desktop
+
 ✔ Tablet
+
 ✔ Mobile
 
 Hamburger menu for small screens
@@ -199,6 +202,7 @@ Adaptive layouts for lists and detail pages
 
 
 Note on Authentication:
+
 DummyJSON’s authentication endpoint is inconsistent and may return
 “Access Token is required” even for valid login requests.
 To ensure assessment flow completion, a fallback login mechanism is used
