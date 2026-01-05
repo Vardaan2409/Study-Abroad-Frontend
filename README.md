@@ -98,18 +98,31 @@ src/
  │   ├─ Header.tsx
  
  │   ├─ Footer.tsx
+ 
  │   ├─ UsersTable.tsx
+ 
  │   ├─ ProductCard.tsx
+ 
  │
+ 
  ├─ store/
+ 
  │   ├─ authStore.ts
+ 
  │   ├─ usersStore.ts
+ 
  │   ├─ productsStore.ts
+ 
  │
+ 
  ├─ providers/
+
  │   └─ ThemeRegistry.tsx
+ 
  │
+ 
  └─ styles/
+ 
      └─ globals.css
 
 ## ⚙️ Setup Instructions
