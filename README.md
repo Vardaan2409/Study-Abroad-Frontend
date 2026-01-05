@@ -255,19 +255,3 @@ while maintaining scalability, which makes it ideal for this project.
 <img width="2849" height="1541" alt="Screenshot 2026-01-05 230914" src="https://github.com/user-attachments/assets/87f45ece-be29-4a40-be94-ef25d9690371" />
 <img width="2848" height="1539" alt="Screenshot 2026-01-05 230928" src="https://github.com/user-attachments/assets/68bfbb43-031b-4802-8f0a-a1c7f5f62de9" />
 <img width="2867" height="1539" alt="Screenshot 2026-01-05 230940" src="https://github.com/user-attachments/assets/bbec482c-10ee-4ccd-93bc-7944a2a65785" />
-
-
-#### <img width="752" height="1334" alt="Screenshot 2026-01-05 231227" src="https://github.com/user-attachments/assets/e8292fb8-1d0f-464b-af9a-584bc394f36c" />
-<img width="751" height="1334" alt="Screenshot 2026-01-05 231237" src="https://github.com/user-attachments/assets/6be348b6-dbe8-44cd-baf7-d2164eb628f3" />
-<img width="744" height="1333" alt="Screenshot 2026-01-05 231254" src="https://github.com/user-attachments/assets/be017abf-9f74-4d56-bbdb-1043424cca56" />
-<img width="744" height="1327" alt="Screenshot 2026-01-05 231304" src="https://github.com/user-attachments/assets/f606cfbe-ae5d-4c10-9e73-62103dbcbd6c" />
-<img width="757" height="1331" alt="Screenshot 2026-01-05 231316" src="https://github.com/user-attachments/assets/b9e47099-46c2-49d5-88da-5758c49ea011" />
-<img width="745" height="1338" alt="Screenshot 2026-01-05 231326" src="https://github.com/user-attachments/assets/46a4dba7-ef2c-4477-839c-250d8514e3d8" />
-<img width="753" height="1333" alt="Screenshot 2026-01-05 231345" src="https://github.com/user-attachments/assets/a7985ba8-553d-4a69-9cca-d87421a8f984" />
-<img width="749" height="1335" alt="Screenshot 2026-01-05 231353" src="https://github.com/user-attachments/assets/af1f37f0-e0c5-4941-b687-b48736012d84" />
-<img width="752" height="1344" alt="Screenshot 2026-01-05 231407" src="https://github.com/user-attachments/assets/9f5de7c9-f573-47c8-9230-5a777ee15e20" />
-
-
-
-
-
