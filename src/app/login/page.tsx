@@ -1,61 +1,3 @@
-// // "use client";
-
-// // import { Button, TextField, Box, Typography } from "@mui/material";
-// // import { useState } from "react";
-// // import { useRouter } from "next/navigation";
-// // import { useAuthStore } from "@/store/authStore";
-
-// // export default function LoginPage() {
-// //     const [username, setUsername] = useState("");
-// //     const [password, setPassword] = useState("");
-// //     const setToken = useAuthStore((state) => state.setToken);
-// //     const router = useRouter();
-
-// //     const handleLogin = async () => {
-// //         const res = await fetch("https://dummyjson.com/auth/login", {
-// //             method: "POST",
-// //             headers: { "Content-Type": "application/json" },
-// //             body: JSON.stringify({ username, password }),
-// //         });
-
-// //         const data = await res.json();
-
-// //         if (data.token) {
-// //             setToken(data.token); // ✅ Zustand
-// //             localStorage.setItem("token", data.token); // optional
-// //             router.push("/dashboard");
-// //         } else {
-// //             alert("Invalid credentials");
-// //         }
-// //     };
-
-// //     return (
-// //         <Box sx={{ maxWidth: 400, mx: "auto", mt: 10 }}>
-// //             <Typography variant="h5">Admin Login</Typography>
-
-// //             <TextField
-// //                 label="Username"
-// //                 fullWidth
-// //                 margin="normal"
-// //                 onChange={(e) => setUsername(e.target.value)}
-// //             />
-
-// //             <TextField
-// //                 label="Password"
-// //                 type="password"
-// //                 fullWidth
-// //                 margin="normal"
-// //                 onChange={(e) => setPassword(e.target.value)}
-// //             />
-
-// //             <Button fullWidth variant="contained" onClick={handleLogin}>
-// //                 Login
-// //             </Button>
-// //         </Box>
-// //     );
-// // }
-
-
 // "use client";
 
 // import { Button, TextField, Box, Typography } from "@mui/material";
@@ -70,15 +12,21 @@
 //     const router = useRouter();
 
 //     const handleLogin = async () => {
-//         // 🔴 DummyJSON auth is unstable
-//         // ✅ Temporary login bypass for assessment
+//         const res = await fetch("https://dummyjson.com/auth/login", {
+//             method: "POST",
+//             headers: { "Content-Type": "application/json" },
+//             body: JSON.stringify({ username, password }),
+//         });
 
-//         const mockToken = "test-token";
+//         const data = await res.json();
 
-//         localStorage.setItem("token", mockToken);
-//         setToken(mockToken);
-
-//         router.push("/dashboard");
+//         if (data.token) {
+//             setToken(data.token); // ✅ Zustand
+//             localStorage.setItem("token", data.token); // optional
+//             router.push("/dashboard");
+//         } else {
+//             alert("Invalid credentials");
+//         }
 //     };
 
 //     return (
@@ -89,7 +37,6 @@
 //                 label="Username"
 //                 fullWidth
 //                 margin="normal"
-//                 value={username}
 //                 onChange={(e) => setUsername(e.target.value)}
 //             />
 
@@ -98,7 +45,6 @@
 //                 type="password"
 //                 fullWidth
 //                 margin="normal"
-//                 value={password}
 //                 onChange={(e) => setPassword(e.target.value)}
 //             />
 
@@ -110,51 +56,9 @@
 // }
 
 
-// "use client";
-
-// import { Box, Button, TextField, Typography } from "@mui/material";
-// import { useRouter } from "next/navigation";
-// import { useAuthStore } from "@/store/authStore";
-
-// export default function LoginPage() {
-//     const router = useRouter();
-//     const setToken = useAuthStore((state) => state.setToken);
-
-//     const handleLogin = () => {
-//         // 🔴 Bypassed auth (intentional)
-//         setToken("mock-token");
-//         router.push("/dashboard");
-//     };
-
-//     return (
-//         <Box
-//             sx={{
-//                 maxWidth: 400,
-//                 mx: "auto",
-//                 mt: 12,
-//                 p: 4,
-//                 boxShadow: 3,
-//                 borderRadius: 2,
-//             }}
-//         >
-//             <Typography variant="h5" sx={{ mb: 2 }}>
-//                 Admin Login
-//             </Typography>
-
-//             <TextField label="Username" fullWidth sx={{ mb: 2 }} />
-//             <TextField label="Password" type="password" fullWidth sx={{ mb: 3 }} />
-
-//             <Button fullWidth variant="contained" onClick={handleLogin}>
-//                 Login
-//             </Button>
-//         </Box>
-//     );
-// }
-
-
 "use client";
 
-import { Box, Button, TextField, Typography, Stack } from "@mui/material";
+import { Box, Button, TextField, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { useAuthStore } from "@/store/authStore";
 
@@ -163,7 +67,7 @@ export default function LoginPage() {
     const setToken = useAuthStore((state) => state.setToken);
 
     const handleLogin = () => {
-        // 🔴 Auth intentionally bypassed
+        // ✅ BYPASS AUTH
         setToken("mock-token");
         router.push("/dashboard");
     };
@@ -171,58 +75,25 @@ export default function LoginPage() {
     return (
         <Box
             sx={{
-                minHeight: "calc(100vh - 128px)", // header + footer space
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                px: 2,
+                maxWidth: 400,
+                mx: "auto",
+                mt: 12,
+                p: 4,
+                boxShadow: 3,
+                borderRadius: 2,
+                backgroundColor: "#fff",
             }}
         >
-            <Box
-                sx={{
-                    width: "100%",
-                    maxWidth: 420,
-                    p: { xs: 3, sm: 4 },
-                    borderRadius: 3,
-                    boxShadow: 4,
-                    backgroundColor: "#fff",
-                }}
-            >
-                <Stack spacing={3}>
-                    <Typography variant="h5" fontWeight={600} textAlign="center">
-                        Admin Login
-                    </Typography>
+            <Typography variant="h5" mb={2}>
+                Admin Login
+            </Typography>
 
-                    <Typography
-                        variant="body2"
-                        color="text.secondary"
-                        textAlign="center"
-                    >
-                        Enter your credentials to access the dashboard
-                    </Typography>
+            <TextField label="Username" fullWidth sx={{ mb: 2 }} />
+            <TextField label="Password" type="password" fullWidth sx={{ mb: 3 }} />
 
-                    <TextField
-                        label="Username"
-                        fullWidth
-                        autoComplete="off"
-                    />
-
-                    <TextField
-                        label="Password"
-                        type="password"
-                        fullWidth
-                        autoComplete="off"
-                    />
-
-                    <Button
-                        variant="contained"
-                        size="large"
-                        onClick={handleLogin}
-                    >
-                        Login
-                    </Button>
-                </Stack>
-            </Box>
+            <Button fullWidth variant="contained" onClick={handleLogin}>
+                Login
+            </Button>
         </Box>
     );
 }
