@@ -1,3 +1,6 @@
+This project was given as an assignment by the company.
+
+
 # 📊 Study Abroad Admin Dashboard
 
 A modern, responsive Admin Dashboard built with Next.js (App Router), Material-UI (MUI), and Zustand.
